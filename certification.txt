@@ -1,0 +1,24 @@
+---------------------------------------------------
+Here are the ownership and the certification details
+of the Win-R666 1.0
+---------------------------------------------------
+
+app_name - 						Win-R666
+app_alias - 					winr666
+app_author_name - 				My Company
+app_author_organizational - 	My Company
+app_author_organization - 		My Company
+app_author_locality - 			My Company
+app_author_state - 				Chattogram
+app_author_country - 			Bangladesh
+app_password - 					ok42lW33Jb3K
+app_versionName - 				versionName "1.0"
+app_versionCode - 				100
+
+---------------------------------------------------
+The certification was created by WebIntoApp.com at
+the Saturday 25th of October 2025 12:31:37 PM
+
+https://webintoapp.com
+---------------------------------------------------
+
