@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Home - WinR666</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">WinR666</div>
+    <div class="top-right">
+      <span id="bal">৳0</span>
+      <a href="profile.html" class="icon">প্রোফাইল</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="row">
+      <div class="card promo big-promo">
+        <div class="promo-left">
+          <h3>অ্যাপ ডাউনলোড</h3>
+          <p>অ্যাপ দিয়ে দ্রুত খেলুন।</p>
+          <a class="btn btn-gold" id="apkDownload" href="https://winr666.app/download">APK ডাউনলোড</a>
+        </div>
+        <div class="promo-right">
+          <div class="jackpot">JACKPOTS <br><strong id="jackAmt">12,113,955.83</strong></div>
+        </div>
+      </div>
+
+      <div class="card games">
+        <h3>গেমস</h3>
+        <div class="game-grid" id="gameGrid">
+          <!-- game icons -->
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="card">
+        <h3>প্রোমো ও খবর</h3>
+        <ul id="newsList">
+          <li>স্বাগতম! প্রথমবার রেজিস্টার করলে বোনাস পেতে পারেন।</li>
+        </ul>
+      </div>
+
+      <div class="card quick-links">
+        <h3>দ্রুত লিংক</h3>
+        <a class="btn" href="deposit.html">ডিপোজিট</a>
+        <a class="btn" href="profile.html">প্রোফাইল</a>
+      </div>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+<script>
+// sample games list with labels and icon placeholders
+const games = [
+  {k:'aviator', t:'Aviator'}, {k:'superace', t:'Super Ace'}, {k:'fortune2', t:'Fortune Gems 2'},
+  {k:'slot', t:'Super Slot'}, {k:'dice', t:'Dice Roll'}, {k:'poker', t:'Poker'}
+];
+const grid = document.getElementById('gameGrid');
+games.forEach(g=>{
+  const card = document.createElement('div');
+  card.className='game-card';
+  card.innerHTML = `<div class="game-icon"><img src="assets/${g.k}.png" alt="${g.t}"/></div><div class="game-title">${g.t}</div>`;
+  card.onclick = ()=> alert('Coming soon — '+g.t);
+  grid.appendChild(card);
+});
+updateBalanceUI();
+</script>
+</body>
+</html>
